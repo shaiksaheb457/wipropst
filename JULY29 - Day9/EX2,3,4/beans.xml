@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Department Bean -->
+    <bean id="department" class="com.wipro.springdemo1.Department">
+        <property name="deptCode" value="CSE"/>
+        <property name="departmentName" value="Computer Science"/>
+    </bean>
+
+    <!-- College Bean which uses Department Bean -->
+    <bean id="college" class="com.wipro.springdemo1.College">
+        <property name="collegeName" value="Wipro College"/>
+        <property name="department" ref="department"/>
+    </bean>
+    
+      <!-- Engine Bean using constructor -->
+    <bean id="engine" class="com.wipro.springdemo1.Engine">
+        <constructor-arg value="Petrol"/>
+    </bean>
+
+    <!-- Car Bean using constructor-based DI -->
+    <bean id="car" class="com.wipro.springdemo1.Car">
+        <constructor-arg value="Tata"/>
+        <constructor-arg ref="engine"/>
+    </bean>
+
+</beans>
