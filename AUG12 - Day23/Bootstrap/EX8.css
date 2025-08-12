@@ -1,0 +1,29 @@
+body {
+  background: linear-gradient(135deg, #ff00ff, #00ffff, #ff9900);
+  background-size: 600% 600%;
+  animation: neonMove 12s ease infinite;
+}
+
+@keyframes neonMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.card {
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid #00ffff; 
+}
+
+.btn-light {
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.btn-light:hover {
+  background-color: #ff00ff;
+  color: white;
+  box-shadow: 0 0 10px #ff00ff;
+}

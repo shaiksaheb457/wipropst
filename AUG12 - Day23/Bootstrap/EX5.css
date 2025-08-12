@@ -1,0 +1,24 @@
+* {
+  font-family: Arial, sans-serif;
+  color: blue; 
+}
+
+h1, p {
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.highlight {
+  color: green; 
+  font-weight: bold;
+}
+
+#main-heading {
+  color: red; 
+  font-size: 32px;
+}
+
+#special-text {
+  color: purple; 
+  font-style: italic;
+}
