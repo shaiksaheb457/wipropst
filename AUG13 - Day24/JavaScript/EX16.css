@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: whitesmoke;
+    color: white;
+    padding: 20px;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.gallery img {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ff4da6;
+}
