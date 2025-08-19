@@ -1,0 +1,13 @@
+<h2>Using ngClass in Angular</h2>
+
+<p [ngClass]="'text-red bg-yellow'">
+  This text uses ngClass with a string.
+</p>
+
+<p [ngClass]="['text-red', 'bg-yellow']">
+  This text uses ngClass with an array.
+</p>
+
+<p [ngClass]="{'text-red': isRed, 'bg-yellow': isYellow}">
+  This text uses ngClass with an object.
+</p>

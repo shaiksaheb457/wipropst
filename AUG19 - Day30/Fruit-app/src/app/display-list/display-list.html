@@ -1,0 +1,8 @@
+<div class="fruit-list">
+  <div *ngFor="let fruit of fruits" class="card">
+    <img [src]="fruit.image" alt="{{fruit.name}}" width="100">
+    <h3>{{ fruit.name }}</h3>
+    <p>{{ fruit.description }}</p>
+    <button (click)="onRemove(fruit.id)">Remove</button>
+  </div>
+</div>

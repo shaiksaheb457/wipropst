@@ -1,0 +1,41 @@
+<!-- <div class="container py-4">
+  <h1 class="mb-4">Home</h1>
+
+
+<app-display-list></app-display-list>
+
+<app-style-demo></app-style-demo>
+
+<app-function-ngclass></app-function-ngclass>
+
+<app-ngstyle-demo></app-ngstyle-demo> -->
+
+
+
+<!-- <div class="container py-4">
+  <h1 class="mb-4">Home Page</h1>
+
+  <div class="row g-3">
+    <div class="col-12 col-sm-6 col-md-4" *ngFor="let f of fruits">
+      <app-fruit
+        [name]="f.name"
+        [image]="f.image"
+        [description]="f.description"
+      ></app-fruit>
+    </div>
+  </div>
+</div> -->
+
+
+<div class="fruit-list">
+  <div *ngFor="let fruit of fruits" class="fruit-item">
+    <!-- Pass fruit object to child -->
+    <app-fruit [fruit]="fruit"></app-fruit>
+
+    <!-- Remove button (by ID) -->
+    <button (click)="removeFruit(fruit.id)" class="btn btn-danger">
+      Remove {{ fruit.name }}
+    </button>
+  </div>
+</div>
+

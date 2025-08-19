@@ -1,0 +1,12 @@
+/* First class */
+.text-red {
+  color: red;
+  font-weight: bold;
+}
+
+/* Second class */
+.bg-yellow {
+  background-color: yellow;
+  padding: 10px;
+  border-radius: 5px;
+}
