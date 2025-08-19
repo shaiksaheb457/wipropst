@@ -1,0 +1,72 @@
+<!-- <div style="text-align:center; margin-top:50px;">
+  <h2>Hello Saheb</h2>
+
+  <input type="text" [(ngModel)]="message" placeholder="Type something...">
+
+  <p>You typed: <b>{{ message }}</b></p>
+
+  <button (click)="printMessage()">Print Message</button>
+</div> -->
+
+
+<!-- 
+<div style="margin:20px;">
+  <h2>List of Names</h2>
+
+  <ul>
+    @for (name of names; track $index) {
+      <li>{{ name }}</li>
+    }
+  </ul>
+</div> -->
+
+
+<!-- <h2>Show / Hide Message Example</h2>
+
+<label>
+  <input type="checkbox" [(ngModel)]="showMessage">
+  Click me to toggle message
+</label>
+
+<div *ngIf="showMessage" style="margin-top: 10px; color: green;">
+  Hello! You checked the box.
+</div> -->
+
+
+<!-- <h2>Country Dropdown Example</h2>
+
+<select>
+  <option value="" disabled selected>Select a country</option>
+  <option *ngFor="let country of dropdownCountries" [value]="country">
+    {{ country }}
+  </option>
+</select>
+
+<br><br>
+
+<button (click)="loadCountries()">Load</button> -->
+
+
+<!-- <h2>Change Text Color Example</h2>
+
+<select [(ngModel)]="selectedColor">
+  <option *ngFor="let color of colors" [value]="color">{{ color }}</option>
+</select>
+
+<br><br>
+
+<p [style.color]="selectedColor">
+  This text changes color based on dropdown selection.
+</p> -->
+
+
+<h2>Search Filter Example</h2>
+
+<input type="text" [(ngModel)]="searchText" placeholder="Type to search..." />
+
+<br><br>
+
+<select size="6">
+  <option *ngFor="let name of filteredNames">{{ name }}</option>
+</select>
+

@@ -1,0 +1,9 @@
+<div class="books-grid">
+  <div class="book-card" *ngFor="let book of books">
+    <div class="thumb">
+      <img [src]="book.image" [alt]="book.title">
+    </div>
+    <h3>{{ book.title }}</h3>
+    <p>{{ book.description }}</p>
+  </div>
+</div>
